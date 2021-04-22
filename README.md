@@ -49,11 +49,17 @@ EDA_v4.py -p
 
 This creates params/hyperparameter.best.json and and params/hyperparameter.estimator.json
 
-Refine number of estimator counts and learning rate, refit with all training data
+Edit params/hyperparameter.range.json and run
+
+EDA_v4.py -p
+
+to refine number of estimator counts and learning rate
+
+Final hyperparameters in params/hyperparameter.best.json
 
 EDA_v4.py –e
 
-This creates params/hyperparameter.best.json
+This trains a model using all training data based on params/hyperparameter.best.json
 
 The model file is model.pkl.gz
 
