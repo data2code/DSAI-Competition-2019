@@ -1,0 +1,7 @@
+{
+    "challenge_id" : "novartis_dsai_challenge_2019",
+    "grader_id": "novartis_dsai_challenge_2019",
+    "authors" : ["bzhousd"],
+    "description" : "Novartis DSAI Random Agent",
+    "debug": false
+}
