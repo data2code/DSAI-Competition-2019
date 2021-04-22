@@ -13,11 +13,12 @@ As mentioned, the code here does not run as it is, as it depends on both trainin
 
 ### Setting
 [NLTK](https://pypi.org/project/nltk/) should be preinstalled.
+```
 export PYTHONPATH=./lib:$PYTHONPATH
 export NLTK_DATA="./nltk_data"
-
+```
 ### Usage
-
+```
 usage: EDA_v4.py [-h] [-p] [-e] [-i] [-r] [-d] [-s] [-k]
 
 Phase2-Approval Prediction
@@ -28,45 +29,46 @@ optional arguments:
   -e, --estimator       estimator tuning
   -r, --recreate        recreate feature matrix
   -s, --sort            sort features
-
+```
 ### Example Workflow
 
 #### Configure model with
-
+```
 configjson.py
-
+```
 #### To recreate feature matrix 
-
+```
 EDA_v4.py -r
-
+```
 This creates feature_matrix.pkl.gz
 
 #### Hyperparameter tuning
 
 Define hyperparameter search grid in params/hyperparameter.range.json
-
+```
 EDA_v4.py -p
-
+```
 This creates params/hyperparameter.best.json and and params/hyperparameter.estimator.json
 
 Edit params/hyperparameter.range.json and run
-
+```
 EDA_v4.py -p
-
+```
 to refine number of estimator counts and learning rate
+You may repeat this tuning process.
 
 Final hyperparameters in params/hyperparameter.best.json
-
+```
 EDA_v4.py –e
-
+```
 This trains a model using all training data based on params/hyperparameter.best.json
 
 The model file is model.pkl.gz
 
 #### Model application
-
+```
 EDA_v4.py
-
+```
 ## Additional Information
 
 You can find more about DSAI 2019 and another winning model by Team [Insight-Out](https://github.com/bjoernholzhauer/DSAI-Competition-2019). 
