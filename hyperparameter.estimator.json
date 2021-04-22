@@ -1,1 +1,0 @@
-{"colsample_bytree": [0.2], "gamma": [0.0], "learning_rate": [0.1, 0.05, 0.03333333333333333, 0.02, 0.01], "max_depth": [8], "min_child_weight": [1], "n_estimators": [5000], "silent": [1], "subsample": [0.8]}
